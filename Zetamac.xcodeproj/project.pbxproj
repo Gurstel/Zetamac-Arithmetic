@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07B0C7F92B744B5C000B69D2 /* ZetamacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B0C7F82B744B5C000B69D2 /* ZetamacApp.swift */; };
+		07B0C7FB2B744B5C000B69D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B0C7FA2B744B5C000B69D2 /* ContentView.swift */; };
+		07B0C7FD2B744B5D000B69D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07B0C7FC2B744B5D000B69D2 /* Assets.xcassets */; };
+		07B0C8002B744B5D000B69D2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07B0C7FF2B744B5D000B69D2 /* Preview Assets.xcassets */; };
+		07B0C80A2B744B5D000B69D2 /* ZetamacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B0C8092B744B5D000B69D2 /* ZetamacTests.swift */; };
+		07B0C8142B744B5D000B69D2 /* ZetamacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B0C8132B744B5D000B69D2 /* ZetamacUITests.swift */; };
+		07B0C8162B744B5D000B69D2 /* ZetamacUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B0C8152B744B5D000B69D2 /* ZetamacUITestsLaunchTests.swift */; };
+		07B0C8232B744B75000B69D2 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B0C8222B744B75000B69D2 /* HomePageView.swift */; };
+		07B0C8252B744B81000B69D2 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B0C8242B744B81000B69D2 /* GameView.swift */; };
+		07B0C8272B744B8C000B69D2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B0C8262B744B8C000B69D2 /* SettingsView.swift */; };
+		07B0C8292B744B97000B69D2 /* GameSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B0C8282B744B97000B69D2 /* GameSettings.swift */; };
+		07B0C82B2B744BAC000B69D2 /* QuestionGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B0C82A2B744BAC000B69D2 /* QuestionGenerator.swift */; };
+		07B0C82D2B744BB8000B69D2 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B0C82C2B744BB8000B69D2 /* GameViewModel.swift */; };
+		07B0C82F2B744BCF000B69D2 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B0C82E2B744BCF000B69D2 /* SettingsViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07B0C8062B744B5D000B69D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07B0C7ED2B744B5C000B69D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07B0C7F42B744B5C000B69D2;
+			remoteInfo = Zetamac;
+		};
+		07B0C8102B744B5D000B69D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07B0C7ED2B744B5C000B69D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07B0C7F42B744B5C000B69D2;
+			remoteInfo = Zetamac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07B0C7F52B744B5C000B69D2 /* Zetamac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zetamac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07B0C7F82B744B5C000B69D2 /* ZetamacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZetamacApp.swift; sourceTree = "<group>"; };
+		07B0C7FA2B744B5C000B69D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		07B0C7FC2B744B5D000B69D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07B0C7FF2B744B5D000B69D2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		07B0C8052B744B5D000B69D2 /* ZetamacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZetamacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07B0C8092B744B5D000B69D2 /* ZetamacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZetamacTests.swift; sourceTree = "<group>"; };
+		07B0C80F2B744B5D000B69D2 /* ZetamacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZetamacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07B0C8132B744B5D000B69D2 /* ZetamacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZetamacUITests.swift; sourceTree = "<group>"; };
+		07B0C8152B744B5D000B69D2 /* ZetamacUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZetamacUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		07B0C8222B744B75000B69D2 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		07B0C8242B744B81000B69D2 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		07B0C8262B744B8C000B69D2 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		07B0C8282B744B97000B69D2 /* GameSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettings.swift; sourceTree = "<group>"; };
+		07B0C82A2B744BAC000B69D2 /* QuestionGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGenerator.swift; sourceTree = "<group>"; };
+		07B0C82C2B744BB8000B69D2 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		07B0C82E2B744BCF000B69D2 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07B0C7F22B744B5C000B69D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07B0C8022B744B5D000B69D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07B0C80C2B744B5D000B69D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07B0C7EC2B744B5C000B69D2 = {
+			isa = PBXGroup;
+			children = (
+				07B0C7F72B744B5C000B69D2 /* Zetamac */,
+				07B0C8082B744B5D000B69D2 /* ZetamacTests */,
+				07B0C8122B744B5D000B69D2 /* ZetamacUITests */,
+				07B0C7F62B744B5C000B69D2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07B0C7F62B744B5C000B69D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07B0C7F52B744B5C000B69D2 /* Zetamac.app */,
+				07B0C8052B744B5D000B69D2 /* ZetamacTests.xctest */,
+				07B0C80F2B744B5D000B69D2 /* ZetamacUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07B0C7F72B744B5C000B69D2 /* Zetamac */ = {
+			isa = PBXGroup;
+			children = (
+				07B0C7F82B744B5C000B69D2 /* ZetamacApp.swift */,
+				07B0C7FA2B744B5C000B69D2 /* ContentView.swift */,
+				07B0C8222B744B75000B69D2 /* HomePageView.swift */,
+				07B0C8242B744B81000B69D2 /* GameView.swift */,
+				07B0C8262B744B8C000B69D2 /* SettingsView.swift */,
+				07B0C8282B744B97000B69D2 /* GameSettings.swift */,
+				07B0C82A2B744BAC000B69D2 /* QuestionGenerator.swift */,
+				07B0C82C2B744BB8000B69D2 /* GameViewModel.swift */,
+				07B0C82E2B744BCF000B69D2 /* SettingsViewModel.swift */,
+				07B0C7FC2B744B5D000B69D2 /* Assets.xcassets */,
+				07B0C7FE2B744B5D000B69D2 /* Preview Content */,
+			);
+			path = Zetamac;
+			sourceTree = "<group>";
+		};
+		07B0C7FE2B744B5D000B69D2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				07B0C7FF2B744B5D000B69D2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		07B0C8082B744B5D000B69D2 /* ZetamacTests */ = {
+			isa = PBXGroup;
+			children = (
+				07B0C8092B744B5D000B69D2 /* ZetamacTests.swift */,
+			);
+			path = ZetamacTests;
+			sourceTree = "<group>";
+		};
+		07B0C8122B744B5D000B69D2 /* ZetamacUITests */ = {
+			isa = PBXGroup;
+			children = (
+				07B0C8132B744B5D000B69D2 /* ZetamacUITests.swift */,
+				07B0C8152B744B5D000B69D2 /* ZetamacUITestsLaunchTests.swift */,
+			);
+			path = ZetamacUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07B0C7F42B744B5C000B69D2 /* Zetamac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07B0C8192B744B5D000B69D2 /* Build configuration list for PBXNativeTarget "Zetamac" */;
+			buildPhases = (
+				07B0C7F12B744B5C000B69D2 /* Sources */,
+				07B0C7F22B744B5C000B69D2 /* Frameworks */,
+				07B0C7F32B744B5C000B69D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Zetamac;
+			productName = Zetamac;
+			productReference = 07B0C7F52B744B5C000B69D2 /* Zetamac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		07B0C8042B744B5D000B69D2 /* ZetamacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07B0C81C2B744B5D000B69D2 /* Build configuration list for PBXNativeTarget "ZetamacTests" */;
+			buildPhases = (
+				07B0C8012B744B5D000B69D2 /* Sources */,
+				07B0C8022B744B5D000B69D2 /* Frameworks */,
+				07B0C8032B744B5D000B69D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07B0C8072B744B5D000B69D2 /* PBXTargetDependency */,
+			);
+			name = ZetamacTests;
+			productName = ZetamacTests;
+			productReference = 07B0C8052B744B5D000B69D2 /* ZetamacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		07B0C80E2B744B5D000B69D2 /* ZetamacUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07B0C81F2B744B5D000B69D2 /* Build configuration list for PBXNativeTarget "ZetamacUITests" */;
+			buildPhases = (
+				07B0C80B2B744B5D000B69D2 /* Sources */,
+				07B0C80C2B744B5D000B69D2 /* Frameworks */,
+				07B0C80D2B744B5D000B69D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07B0C8112B744B5D000B69D2 /* PBXTargetDependency */,
+			);
+			name = ZetamacUITests;
+			productName = ZetamacUITests;
+			productReference = 07B0C80F2B744B5D000B69D2 /* ZetamacUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07B0C7ED2B744B5C000B69D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					07B0C7F42B744B5C000B69D2 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					07B0C8042B744B5D000B69D2 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 07B0C7F42B744B5C000B69D2;
+					};
+					07B0C80E2B744B5D000B69D2 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 07B0C7F42B744B5C000B69D2;
+					};
+				};
+			};
+			buildConfigurationList = 07B0C7F02B744B5C000B69D2 /* Build configuration list for PBXProject "Zetamac" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07B0C7EC2B744B5C000B69D2;
+			productRefGroup = 07B0C7F62B744B5C000B69D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07B0C7F42B744B5C000B69D2 /* Zetamac */,
+				07B0C8042B744B5D000B69D2 /* ZetamacTests */,
+				07B0C80E2B744B5D000B69D2 /* ZetamacUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07B0C7F32B744B5C000B69D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07B0C8002B744B5D000B69D2 /* Preview Assets.xcassets in Resources */,
+				07B0C7FD2B744B5D000B69D2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07B0C8032B744B5D000B69D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07B0C80D2B744B5D000B69D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07B0C7F12B744B5C000B69D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07B0C8272B744B8C000B69D2 /* SettingsView.swift in Sources */,
+				07B0C7FB2B744B5C000B69D2 /* ContentView.swift in Sources */,
+				07B0C8292B744B97000B69D2 /* GameSettings.swift in Sources */,
+				07B0C8232B744B75000B69D2 /* HomePageView.swift in Sources */,
+				07B0C82D2B744BB8000B69D2 /* GameViewModel.swift in Sources */,
+				07B0C8252B744B81000B69D2 /* GameView.swift in Sources */,
+				07B0C7F92B744B5C000B69D2 /* ZetamacApp.swift in Sources */,
+				07B0C82B2B744BAC000B69D2 /* QuestionGenerator.swift in Sources */,
+				07B0C82F2B744BCF000B69D2 /* SettingsViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07B0C8012B744B5D000B69D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07B0C80A2B744B5D000B69D2 /* ZetamacTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07B0C80B2B744B5D000B69D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07B0C8162B744B5D000B69D2 /* ZetamacUITestsLaunchTests.swift in Sources */,
+				07B0C8142B744B5D000B69D2 /* ZetamacUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07B0C8072B744B5D000B69D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07B0C7F42B744B5C000B69D2 /* Zetamac */;
+			targetProxy = 07B0C8062B744B5D000B69D2 /* PBXContainerItemProxy */;
+		};
+		07B0C8112B744B5D000B69D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07B0C7F42B744B5C000B69D2 /* Zetamac */;
+			targetProxy = 07B0C8102B744B5D000B69D2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		07B0C8172B744B5D000B69D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		07B0C8182B744B5D000B69D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07B0C81A2B744B5D000B69D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Zetamac/Preview Content\"";
+				DEVELOPMENT_TEAM = K9RUSYDN8F;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = arithmetic.Zetamac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		07B0C81B2B744B5D000B69D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Zetamac/Preview Content\"";
+				DEVELOPMENT_TEAM = K9RUSYDN8F;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = arithmetic.Zetamac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		07B0C81D2B744B5D000B69D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K9RUSYDN8F;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = arithmetic.ZetamacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zetamac.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Zetamac";
+			};
+			name = Debug;
+		};
+		07B0C81E2B744B5D000B69D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K9RUSYDN8F;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = arithmetic.ZetamacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zetamac.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Zetamac";
+			};
+			name = Release;
+		};
+		07B0C8202B744B5D000B69D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K9RUSYDN8F;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = arithmetic.ZetamacUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Zetamac;
+			};
+			name = Debug;
+		};
+		07B0C8212B744B5D000B69D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K9RUSYDN8F;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = arithmetic.ZetamacUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Zetamac;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07B0C7F02B744B5C000B69D2 /* Build configuration list for PBXProject "Zetamac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07B0C8172B744B5D000B69D2 /* Debug */,
+				07B0C8182B744B5D000B69D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07B0C8192B744B5D000B69D2 /* Build configuration list for PBXNativeTarget "Zetamac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07B0C81A2B744B5D000B69D2 /* Debug */,
+				07B0C81B2B744B5D000B69D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07B0C81C2B744B5D000B69D2 /* Build configuration list for PBXNativeTarget "ZetamacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07B0C81D2B744B5D000B69D2 /* Debug */,
+				07B0C81E2B744B5D000B69D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07B0C81F2B744B5D000B69D2 /* Build configuration list for PBXNativeTarget "ZetamacUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07B0C8202B744B5D000B69D2 /* Debug */,
+				07B0C8212B744B5D000B69D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07B0C7ED2B744B5C000B69D2 /* Project object */;
+}
