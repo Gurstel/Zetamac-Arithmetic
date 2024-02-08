@@ -14,14 +14,43 @@ struct GameView: View {
 
     var body: some View {
         VStack {
-            Text("Time: \(gameViewModel.timeRemaining)")
-            Text("Score: \(gameViewModel.score)")
+            HStack {
+                Text("Time: \(gameViewModel.timeRemaining)")
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                
+                Text("Score: \(gameViewModel.score)")
+                    .frame(maxWidth: .infinity, alignment: .trailing)
+            }
+            
+            Spacer()
+
             Text(gameViewModel.currentQuestion)
-            TextField("Your answer", text: $gameViewModel.userAnswer)
-                .keyboardType(.numberPad)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .onChange(of: gameViewModel.userAnswer) {
-                }
+                .multilineTextAlignment(.center)
+            
+            if #available(iOS 17.0, *) {
+                TextField("", text: $gameViewModel.userAnswer)
+                    .keyboardType(.numberPad)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .frame(width: 80)
+                    .padding(.top, 20)
+                    .disabled(gameViewModel.timeRemaining <= 0)
+                    .onChange(of: gameViewModel.userAnswer) {
+                        gameViewModel.checkAnswer()
+                    }
+            } else {
+                TextField("", text: $gameViewModel.userAnswer)
+                    .keyboardType(.numberPad)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .frame(width: 80)
+                    .padding(.top, 20)
+                    .disabled(gameViewModel.timeRemaining <= 0)
+                    .onChange(of: gameViewModel.userAnswer) { newValue in
+                        gameViewModel.checkAnswer()
+                    }
+            }
+           
+            Spacer()
+            
         }
         .padding()
         .onAppear {
