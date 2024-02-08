@@ -80,7 +80,6 @@ extension GameSettings {
         
         additionEnabled = defaults.bool(forKey: "additionEnabled")
         subtractionEnabled = defaults.bool(forKey: "subtractionEnabled")
-        print("Loaded Subtraction as:", subtractionEnabled)
         multiplicationEnabled = defaults.bool(forKey: "multiplicationEnabled")
         divisionEnabled = defaults.bool(forKey: "divisionEnabled")
         
@@ -89,9 +88,10 @@ extension GameSettings {
     }
         
     private func validateRanges() {
-        if additionRange1.0 < 2 || additionRange1.1 < 2 { additionRange1 = (2, 100) }
-        if additionRange2.0 < 2 || additionRange2.1 < 2 { additionRange2 = (2, 100) }
-        if multiplicationRange1.0 < 2 || multiplicationRange1.1 < 2 { multiplicationRange1 = (2, 12) }
-        if multiplicationRange2.0 < 2 || multiplicationRange2.1 < 2 { multiplicationRange2 = (2, 100) }
+        if additionRange1.0 < 2 || additionRange1.1 < 2 || additionRange1.0 > additionRange1.1 { additionRange1 = (2, 100) }
+        if additionRange2.0 < 2 || additionRange2.1 < 2 || additionRange2.0 > additionRange2.1 { additionRange2 = (2, 100) }
+        if multiplicationRange1.0 < 2 || multiplicationRange1.1 < 2 || multiplicationRange1.0 > multiplicationRange1.1 { multiplicationRange1 = (2, 12) }
+        if multiplicationRange2.0 < 2 || multiplicationRange2.1 < 2 || multiplicationRange2.0 > multiplicationRange2.1 { multiplicationRange2 = (2, 100) }
+        if gameDuration < 5 || gameDuration > 300 { gameDuration = 120 }
     }
 }

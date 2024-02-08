@@ -31,28 +31,27 @@ class GameViewModel: ObservableObject {
     }
     
     func startTimer() {
-        gameTimer?.invalidate() // Invalidate any existing timer
+        gameTimer?.invalidate()
         gameTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] _ in
             guard let self = self else { return }
             if self.timeRemaining > 0 {
                 self.timeRemaining -= 1
             } else {
                 self.gameTimer?.invalidate()
-                // Handle game end, such as navigating back or showing a score summary
+
             }
         }
     }
     
-    func checkAnswer() {
-            if userAnswer == currentAnswer {
-                score += 1 // Increment score for correct answer
-                userAnswer = "" // Reset user answer
-                generateQuestion() // Generate next question
-            }
+    func checkAnswer(){
+        if userAnswer == currentAnswer {
+            score += 1
+            userAnswer = ""
+            generateQuestion()
         }
+    }
     
     
-    // Additional methods as needed for handling user input, etc.
 }
 
 extension GameViewModel {
@@ -80,15 +79,15 @@ extension GameViewModel {
         case .multiplication:
             number1 = Int.random(in: settings.multiplicationRange1.0...settings.multiplicationRange1.1)
             number2 = Int.random(in: settings.multiplicationRange2.0...settings.multiplicationRange2.1)
-            currentQuestion = "\(number1) * \(number2)"
+            currentQuestion = "\(number1) × \(number2)"
         case .division:
             number2 = Int.random(in: settings.multiplicationRange1.0...settings.multiplicationRange1.1)
             let tempResult = Int.random(in: settings.multiplicationRange2.0...settings.multiplicationRange2.1)
-            number1 = number2 * tempResult // Ensure whole number division
-            currentQuestion = "\(number1) / \(number2)"
+            number1 = number2 * tempResult
+            currentQuestion = "\(number1) ÷ \(number2)"
         }
         
-        // Calculate and store the correct answer for later verification
+   
         switch operation {
         case .addition:
             currentAnswer = String(number1 + number2)
@@ -103,7 +102,6 @@ extension GameViewModel {
     
     private func availableOperations() -> [OperationType] {
         var operations: [OperationType] = []
-        print("Subtraction is currently", settings.subtractionEnabled)
         if settings.additionEnabled { operations.append(.addition) }
         if settings.subtractionEnabled { operations.append(.subtraction) }
         if settings.multiplicationEnabled { operations.append(.multiplication) }
@@ -118,19 +116,18 @@ extension GameViewModel {
 
 extension GameViewModel {
     func pauseTimer() {
-        gameTimer?.invalidate() // Stop the timer
+        gameTimer?.invalidate()
     }
     
     func resumeTimer() {
-        if timeRemaining > 0 {
-            startTimer()
-        }
+        timeRemaining = settings.gameDuration
+        startTimer()
     }
     
     func resetGame() {
-            pauseTimer() // Stop the current timer
-            score = 0 // Reset score if needed
-            timeRemaining = settings.gameDuration // Reset time back to initial setting
-            generateQuestion() // Generate a new question for a fresh start
+            pauseTimer()
+            score = 0
+            timeRemaining = settings.gameDuration
+            generateQuestion() 
     }
 }

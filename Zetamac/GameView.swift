@@ -14,14 +14,27 @@ struct GameView: View {
 
     var body: some View {
         VStack {
-            Text("Time: \(gameViewModel.timeRemaining)")
-            Text("Score: \(gameViewModel.score)")
+            HStack {
+                Text("Time: \(gameViewModel.timeRemaining)")
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                
+                Text("Score: \(gameViewModel.score)")
+                    .frame(maxWidth: .infinity, alignment: .trailing)
+            }
+            
+            Spacer()
+
             Text(gameViewModel.currentQuestion)
-            TextField("Your answer", text: $gameViewModel.userAnswer)
+                .multilineTextAlignment(.center)
+            
+            TextField("", text: $gameViewModel.userAnswer)
                 .keyboardType(.numberPad)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
-                .onChange(of: gameViewModel.userAnswer) {
-                }
+                .frame(width: 80)
+                .padding(.top, 20)
+                .disabled(gameViewModel.timeRemaining <= 0)
+            Spacer()
+            
         }
         .padding()
         .onAppear {
